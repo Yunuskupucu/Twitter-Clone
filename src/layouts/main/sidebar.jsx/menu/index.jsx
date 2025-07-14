@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import { mainMenu } from '../../../../utils/consts';
 import Button from '../../../../components/button';
+import More from './more';
+import New from './new';
 
 export default function Menu() {
   return (
@@ -32,7 +34,7 @@ export default function Menu() {
           )}
         </NavLink>
       ))}
-      <button className="py-[3px] block group">
+      {/* <button className="py-[3px] block group">
         <div
           className={
             'p-3 rounded-full transition-colors inline-flex items-center gap-5 group-hover:bg-[#eff3f41a]'
@@ -46,12 +48,12 @@ export default function Menu() {
               />
             </svg>
           </div>
+
           <div className="pr-4 text-xl">Daha Fazla</div>
         </div>
-      </button>
-      <div className="py-4">
-        <Button> Gönderi Yayınla</Button>
-      </div>
+      </button> */}
+      <More />
+      <New />
     </nav>
   );
 }
